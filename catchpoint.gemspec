@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name = "catchpoint"
-  s.version = "1.0.1"
+  s.version = "1.0.2"
   s.license = 'MIT'
-  s.email = "a@a.com"
-  s.homepage = "http://a.com/"
+  s.email = "david-vv@nicklay.com"
+  s.homepage = "https://github.com/venturaville/catchpoint-api"
   s.authors = ["David Nicklay"]
   s.summary = "Catchpoint API wrapper and CLI"
   s.files = Dir['lib/**/*.rb'] + Dir['bin/*']
