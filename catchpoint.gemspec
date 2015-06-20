@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://a.com/"
   s.authors = ["David Nicklay"]
   s.summary = "Catchpoint API wrapper and CLI"
-  s.files = Dir['lib/**/*.rb'] + Dir['bin/*'] + Dir['examples/*.rb']
+  s.files = Dir['lib/**/*.rb'] + Dir['bin/*']
   s.description = "Wrapper and CLI for Catchpoint API"
   s.bindir = "bin"
   s.executables = %w{ catchpoint-list-products }
