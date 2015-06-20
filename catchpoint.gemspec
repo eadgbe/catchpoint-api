@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "catchpoint"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
   s.license = 'MIT'
   s.email = "a@a.com"
   s.homepage = "http://a.com/"
