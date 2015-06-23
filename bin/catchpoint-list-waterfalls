@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require 'catchpoint'
+require 'uri'
+# List waterfalls for the previous hour given a test ID
+c = Catchpoint.new()
+now = DateTime.now
+seconds_ago = 3600
+start = (now.to_time - seconds_ago).to_datetime
+start_str = start.strftime('%m-%d-%Y %H:%M')
+testid = ARGV.shift
+data = c.get("/waterfall/intervals/#{testid}?date=" + URI.escape(start_str))
+waterfalls = data['items']
+waterfall_tokens = waterfalls.map { |m| m['intervals'] }.flatten.map { |m| m['waterfall_token'] }.flatten
+puts waterfall_tokens.join("\n")

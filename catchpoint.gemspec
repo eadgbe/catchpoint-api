@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "catchpoint"
-  s.version = "1.0.2"
+  s.version = "1.0.3"
   s.license = 'MIT'
   s.email = "david-vv@nicklay.com"
   s.homepage = "https://github.com/venturaville/catchpoint-api"
@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.files = Dir['lib/**/*.rb'] + Dir['bin/*']
   s.description = "Wrapper and CLI for Catchpoint API"
   s.bindir = "bin"
-  s.executables = %w{ catchpoint-list-products }
+  s.executables = %w{ catchpoint-list-products catchpoint-get-waterfall catchpoint-list-waterfalls }
   %w{ oauth2 }.each do |d|
     s.add_dependency d
   end

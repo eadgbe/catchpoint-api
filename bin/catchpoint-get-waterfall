@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# Get a waterfall by ID
+require 'catchpoint'
+require 'json'
+c = Catchpoint.new()
+waterfallid = ARGV.shift
+puts c.get('/waterfall/' + waterfallid + '/data')
