@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.files = Dir['lib/**/*.rb'] + Dir['bin/*']
   s.description = "Wrapper and CLI for Catchpoint API"
   s.bindir = "bin"
-  s.executables = %w{ catchpoint-list-products catchpoint-get-waterfall catchpoint-list-waterfalls }
+  s.executables = %w{ catchpoint-list-products catchpoint-get-waterfall catchpoint-list-waterfalls catchpoint-list-alerts catchpoint-list-folders catchpoint-list-nodes catchpoint-list-tests }
   %w{ oauth2 }.each do |d|
     s.add_dependency d
   end

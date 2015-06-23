@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require 'pp'
+require 'catchpoint'
+c = Catchpoint.new()
+pp c.get('/folders')

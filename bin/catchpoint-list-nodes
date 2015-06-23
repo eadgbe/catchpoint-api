@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require 'catchpoint'
+require 'pp'
+c = Catchpoint.new()
+pp c.get('/nodes')
